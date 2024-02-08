@@ -1,6 +1,7 @@
 import { MongoHelper } from 'src/infra/db';
 
 const port = process.env.PORT || 8080;
+console.log('port', port);
 
 MongoHelper.connect(process.env.MONGODB)
   .then(async () => {
